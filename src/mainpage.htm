@@ -16,7 +16,7 @@
 	padding-top: 10px;
 	padding-left: -10px;
 	height: 400px;
-	background-color: #FFFFFF;	
+	background-color: #C1D7E7;	
 }
 .bh {
 	background-repeat: no-repeat;
@@ -52,7 +52,7 @@ h2{
 }
 #h{
 	text-align: left;
-	padding-top: 20px;
+	padding-top: 10px;
 	padding-left: 110px;
 	font-size: 28px;
 	color: black;
@@ -83,9 +83,19 @@ ul{
 	font-size: 18px;
 	color: white;	
 }
+table td 
+{
+  table-layout:fixed;
+  width:20px;
+  overflow:hidden;
+  word-wrap:break-word;
+}
 #rec{
 	font-family: Courier;
 	list-style-type: square;
+}
+#txtcolor{
+	color: black;
 }
 
 #txt{
@@ -104,7 +114,7 @@ ul{
 	<p id="p1">I am a student in NCKU majoring in CSIE.<br></p>
 </div>
 <div class="resume">
-	<h2 align="right">[resume]</h2>
+	<h2 align="right">[Resume]</h2>
 	<h1>Education</h1>
 		<li id="txt">Kahsiung Senior High School</li>
 		<br>
@@ -113,8 +123,23 @@ ul{
 		<li id="rec">Tutor for 1 year</li>
 </div>
 <div class="skill">
-	
-</div>>
+	<h1 id="txtcolor">[Skill]</h1>
+	<br><br>
+	<table border="3" width="300px" height="180px" style="width:100% text-align:center" align="center" >
+	<tr>
+		<th>Ability</th><th colspan="5">relative rank</th>
+	</tr>
+	<tr>
+		<th>C</th><td bgcolor="red">	</td><td bgcolor="red">	</td><td bgcolor="red">	</td><td>	</td><td>	</td>
+	</tr>
+	<tr>
+		<th>C++</th><td bgcolor="red">	</td><td>	</td><td>	</td><td>	</td><td>	</td>
+	</tr>
+		<th>Java</th><td bgcolor="red">	</td><td bgcolor="red">	</td><td bgcolor="red">	</td><td bgcolor="red">	</td><td>	</td>
+	</tr>
+		<th>python</th><td>	</td><td>	</td><td>	</td><td>	</td><td>	</td>
+	</tr>
+</div>
 
 </body>
 </html>
