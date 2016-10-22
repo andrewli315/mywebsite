@@ -1,40 +1,120 @@
 <html>
 <style>
 .about{
-	height: 400px;
+	padding-top: -10px;
+	padding-left: -10px;
+	height: 500px;
 	background-color: #FFFFFF;
 }
 .resume{
+	padding-top: 10px;
+	padding-left: -10px;
 	height: 400px;
-	background-color: #5B85AA;
+	background-color: #254B72;
+}
+.skill{
+	padding-top: 10px;
+	padding-left: -10px;
+	height: 400px;
+	background-color: #FFFFFF;	
+}
+.bh {
+	background-repeat: no-repeat;
+	background-position: 65%;
+	background-size: 100%;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 150px;
+	left: 100px;
+	}
+.bh:hover{
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	top: 80px;
+	left: 70px;
 }
 h1{
 	text-align: center;
 	padding-top: 10px;
 	font-size: 28px;
+	font-family: Courier;
+	color: white;
+}
+h2{
+	text-align: right;
+	padding-right: 110px;
+	font-size: 28px;
+	color: white;
+	font-family: Courier;
+}
+#h{
+	text-align: left;
+	padding-top: 20px;
+	padding-left: 110px;
+	font-size: 28px;
 	color: black;
+	font-family: Courier;	
+}
 
+#p1{
+	text-align: center;
+	padding-top: 0px;
+	font-size: 14px;
+	color: black;
+	font-family: Courier;	
 }
 li{
-	text-align: left;
-	text-indent: 550px;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+}
+p{	
+	text-align: center;
+	color: black;
+	padding-top: 20px;
+	font-size: 28px;
+	font-family: Courier;
+}
+ul{
+	text-align: center;
+	font-size: 18px;
+	color: white;	
+}
+#rec{
+	font-family: Courier;
+	list-style-type: square;
+}
+
+#txt{
+	font-family: Courier;
 }
 </style>
 <body>
+	<a href="https://www.facebook.com/silvester.li" target="main">
+	<div class="bh" style = 'background-image: url(../img/img.jpg)'>
+</div>
+</a>
+
 <div class="about">
-	<h1>My name is Andrew Li</h1>
-	<br>
-	<li>I come from Kaohsiung</li>
-	<br>
-	<li>I graguated from KSHS</li>
-	<br>
-	<li>I am studying in NCKU</li>
-	<br>
-	<li>I major in CSIE</li>
+	<h2 id="h">[About]</h2>
+	<p><b>I am Andrew Li</b></p>
+	<p id="p1">I am a student in NCKU majoring in CSIE.<br></p>
 </div>
 <div class="resume">
-	<h>2000</h>
+	<h2 align="right">[resume]</h2>
+	<h1>Education</h1>
+		<li id="txt">Kahsiung Senior High School</li>
+		<br>
+		<li id = "txt">Department of CSIE in National Cheng Kung University</li>
+	<h1>Employment</h1>
+		<li id="rec">Tutor for 1 year</li>
 </div>
+<div class="skill">
+	
+</div>>
 
 </body>
 </html>
