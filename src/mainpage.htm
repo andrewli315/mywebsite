@@ -9,7 +9,7 @@
 .resume{
 	padding-top: 10px;
 	padding-left: -10px;
-	height: 400px;
+	height: 550px;
 	background-color: #254B72;
 }
 .skill{
@@ -17,6 +17,12 @@
 	padding-left: -10px;
 	height: 400px;
 	background-color: #C1D7E7;	
+}
+.bottom{
+	padding-top: 10px;
+	padding-left: -10px;
+	height: 100px;
+	background-color: #254B72;		
 }
 .bh {
 	background-repeat: no-repeat;
@@ -35,6 +41,14 @@
 	position: absolute;
 	top: 80px;
 	left: 70px;
+}
+.back{
+	z-index: -999;
+	height: 150px;
+	background-image: url("../img/background.jpg");
+	background-repeat: repeat-x;
+	background-position: 100%;
+	size: 100%;
 }
 h1{
 	text-align: center;
@@ -83,12 +97,17 @@ ul{
 	font-size: 18px;
 	color: white;	
 }
-table td 
+table td
 {
   table-layout:fixed;
-  width:20px;
+  width:300px;
+  font-size: 24px;
   overflow:hidden;
   word-wrap:break-word;
+}
+table th{
+	font-size: 24px;
+	word-wrap:break-word;
 }
 #rec{
 	font-family: Courier;
@@ -101,6 +120,12 @@ table td
 #txt{
 	font-family: Courier;
 }
+#pic{
+	padding-top: 30px;
+	padding-left: 10px;
+	position: relative;
+	left: 880px;
+}
 </style>
 <body>
 	<a href="https://www.facebook.com/silvester.li" target="main">
@@ -112,6 +137,24 @@ table td
 	<h2 id="h">[About]</h2>
 	<p><b>I am Andrew Li</b></p>
 	<p id="p1">I am a student in NCKU majoring in CSIE.<br></p>
+	<table border="6" align="center" style="width:100% text-align:center" >
+		<tr>
+			<th>name</th><td>Andrew Li</td>
+		</tr>
+		<tr>
+			<th>Birthday</th><td>1996.03.26</td>
+		</tr>
+		<tr>
+			<th rowspan="3">Educational background</th><td>Nanzih Junior High School</td>
+		</tr>
+		<tr>
+			<td>Nanzih Junior High School</td>
+		</tr>
+		
+		<tr>
+			<td>Nanzih Junior High School</td>
+		</tr>
+	</table>
 </div>
 <div class="resume">
 	<h2 align="right">[Resume]</h2>
@@ -122,10 +165,12 @@ table td
 	<h1>Employment</h1>
 		<li id="rec">Tutor for 1 year</li>
 </div>
+<div class="back"><br>
+</div>
 <div class="skill">
 	<h1 id="txtcolor">[Skill]</h1>
 	<br><br>
-	<table border="3" width="300px" height="180px" style="width:100% text-align:center" align="center" >
+	<table border="0" width="300px" height="120px" style="width:100% text-align:center" align="center" >
 	<tr>
 		<th>Ability</th><th colspan="5">relative rank</th>
 	</tr>
@@ -139,7 +184,12 @@ table td
 	</tr>
 		<th>python</th><td>	</td><td>	</td><td>	</td><td>	</td><td>	</td>
 	</tr>
+	</table>
 </div>
 
+<div class="bottom">
+	<a href="https://www.facebook.com/silvester.li" target="main"><img id="pic" src="../img/facebook.png" ></a>
+	<a href="https://www.instagram.com/nyps70414/" target="main"><img id="pic" src="../img/instagram.png" ></a>
+	<a href="https://www.flickr.com/photos/135307314@N02/albums" target="main"><img id="pic" src="../img/flickr.png"></a>
 </body>
 </html>
